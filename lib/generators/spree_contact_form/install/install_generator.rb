@@ -1,4 +1,4 @@
-module SpreeContactUs
+module SpreeContactForm
   module Generators
     class InstallGenerator < Rails::Generators::Base
 
@@ -6,7 +6,7 @@ module SpreeContactUs
       source_root File.expand_path('../../templates', __FILE__)
 
       def copy_initializer_file
-        template 'spree_contact_us.rb', "#{file_name}/config/initializers/spree_contact_us.rb"
+        template 'spree_contact_form.rb', "#{file_name}/config/initializers/spree_contact_form.rb"
       end
 
     end

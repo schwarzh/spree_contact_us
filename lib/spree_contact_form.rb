@@ -1,7 +1,7 @@
 require 'spree_core'
-require 'spree_contact_us/engine'
+require 'spree_contact_form/engine'
 
-module SpreeContactUs
+module SpreeContactForm
 
   # Address ContactUs email notifications are sent from.
   mattr_accessor :mailer_from

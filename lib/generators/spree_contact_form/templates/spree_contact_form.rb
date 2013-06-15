@@ -1,6 +1,6 @@
 # Use this initializer to configure the contact mailer.
 
-SpreeContactUs.setup do |config|
+SpreeContactForm.setup do |config|
 
   # ==> Mailer Configuration
 

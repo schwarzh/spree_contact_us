@@ -12,7 +12,7 @@
 
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @contact } %>
 
-<h1><%= t('.contact_us') %></h1>
+<h1><%= t('.contact_form') %></h1>
 <%= form_for @contact, :url => contacts_path, :html => { :novalidate => '' } do |f| %>
   <% if SpreeContactUs.require_name %>
     <p>
@@ -26,7 +26,7 @@
     <span class="required">*</span><br/>
     <%= f.email_field :email %>
   </p>
-  <% if SpreeContactUs.require_subject %>
+  <% if SpreeContactForm.require_subject %>
     <p>
       <%= f.label :subject %>
       <span class="required">*</span><br/>
@@ -39,6 +39,6 @@
     <%= f.text_area :message %>
   </p>
   <p>
-    <%= f.submit t('.submit'), :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') %>
+    <%= f.submit t('.submit'), :alt => t('.submit'), :id => 'contact_form_contact_submit', :title => t('.submit') %>
   </p>
 <% end %>

@@ -4,13 +4,13 @@
 en:
   activemodel:
     attributes:
-      spree/contact_us/contact:
+      spree/contact_form/contact:
         name: "Name"
         email: "Email"
         message: "Message"
         subject: "Subject"
   spree:
-    contact_us:
+    contact_form:
       contact_mailer:
         contact_email:
           sent_by_contact_form: "Sent by contact form from %{email}"
@@ -18,7 +18,7 @@ en:
           subject: "Contact Us message from %{email}"
       contacts:
         new:
-          contact_us: "Contact Us"
+          contact_form: "Contact Us"
           submit: "Submit"
       notices:
         success: "Contact email was successfully sent."

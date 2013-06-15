@@ -1,6 +1,6 @@
 Spree::Core::Engine.routes.draw do
   resources :contacts,
-    :controller => 'contact_us/contacts',
+    :controller => 'contact_form/contacts',
     :only       => [:new, :create]
-  match 'contact-us' => 'contact_us/contacts#new', :as => :contact_us
+  match 'contact' => 'contact_form/contacts#new', :as => :contact_form
 end
